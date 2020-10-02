@@ -1,0 +1,9 @@
+<%= form_with(model:task, local: true) do |f|%>
+  <%= f.label :status,'進捗度'%>
+  <%= f.text_field :status%>
+
+  <%= f.label :content,'タスク'%>
+  <%= f.text_field :content%>
+  
+  <%= f.submit "送信"%>
+<%end%>
